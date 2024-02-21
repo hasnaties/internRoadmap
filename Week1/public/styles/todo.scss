@@ -1,0 +1,83 @@
+// variables
+$base-color: yellowgreen; 
+
+// mixin
+@mixin center{
+ display: flex;
+ justify-content: center;
+}
+
+@mixin border-simple {
+  border: 1px solid yellowgreen;
+}
+
+// elements
+body {
+  @include center;
+  align-items: center;
+  flex-direction: column;
+  background: conic-gradient(from 0.5turn at bottom, lightblue, white);
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow: scroll;
+}
+
+h1 {
+  color: $base-color;
+  font-size: 100px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: 800;
+  margin-bottom: 3rem;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 15px;
+}
+
+// classes
+
+.grid-container .data {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  transition: $base-color 0.2s ease;
+}
+
+.grid-container .data:hover {
+  background-color: #f0f0f0;
+  cursor: pointer;
+}
+
+.data {
+  @include center;
+  @include border-simple;
+  display: block;
+  flex-direction: row;
+  max-width: 300px;
+  overflow: auto;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.grid-container {
+  @include border-simple;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-gap: 10px;
+  padding: 10px;
+  width: 60%;
+}
+
+.no-text-indicator {
+  cursor: default;
+}
+
+// media
+@media screen and (max-width: 600px){
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+}
