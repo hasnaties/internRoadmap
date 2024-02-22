@@ -2,9 +2,19 @@
 
 ## Week 1: Front-End Fundamentals
 
+### Day 6-7: JavaScript Fundamentals ✔
+
+- Introduction to JavaScript and its role in web development.
+- Writing JavaScript code in HTML documents.
+- Declaring variables (var, let, const).
+- Exploring data types (string, number, boolean, etc.).
+- Using arithmetic and comparison operators.
+- Understanding conditional statements (if, else, switch).
+- Define and call functions, pass arguments, and return values.
+
 ### Day 4-5: Responsive Design with CSS ✔
 
-- Master CSS layout techniques using Flexbox and CSS Grid.
+- Master CSS layout techniques using Flexbox and C- SS Grid.
 - Understand media queries for responsive design.
 - Apply styles based on screen size.
 - Introduction to CSS preprocessors (e.g., Sass or Less).

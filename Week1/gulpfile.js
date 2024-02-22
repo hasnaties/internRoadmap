@@ -16,7 +16,7 @@ gulp.task('serve', gulp.series('compile-sass', function () {
     },
   });
 
-  gulp.watch('public/styles/*.scss', gulp.series('compile-sass'));
+  gulp.watch(['public/styles/*.scss', 'public/script/*.js'], gulp.series('compile-sass'));
 
   gulp.watch('*.html').on('change', browserSync.reload);
 }));
