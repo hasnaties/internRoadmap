@@ -1,0 +1,96 @@
+.side-menu {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 240px; }
+
+.nav-menu {
+  margin: 5px; }
+
+.nav-pair {
+  align-items: center;
+  border-radius: 5px;
+  display: flex;
+  padding: 5px 5px;
+  transition: background-color 0.3s ease; }
+  .nav-pair:hover {
+    background-color: #eeeefa; }
+
+#title-div {
+  color: #181c32;
+  text-align: center;
+  width: inherit;
+  letter-spacing: 1px; }
+
+#title-heading {
+  margin: 20px; }
+
+#bar-nav-text {
+  color: #515565;
+  font-weight: 400;
+  margin-left: 15px; }
+
+#icon-img {
+  height: 24px;
+  width: 24px;
+  margin-left: 20px; }
+
+#div-nav-second {
+  margin-top: 160px; }
+
+#count {
+  background-color: #5456cf;
+  border-radius: 20px;
+  margin-left: 30px;
+  padding: 5px 10px; }
+
+#count-text {
+  font-family: inherit;
+  color: #ffffff;
+  font-weight: 500; }
+
+hr {
+  background-color: #f3f4f6;
+  margin: 0px 5px; }
+
+#profile {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  margin-top: 25px; }
+
+#dp {
+  background-color: #5456cf;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  width: 50px;
+  height: 50px; }
+
+#dp-text {
+  color: #ffffff;
+  font-family: inherit;
+  font-weight: 300;
+  font-size: large;
+  margin-left: 3px; }
+
+#profile-text-details {
+  color: #181c32;
+  font-family: inherit;
+  margin-left: 10px; }
+
+#profile-name {
+  font-weight: 500; }
+
+#profile-title {
+  margin-top: 5px;
+  font-weight: 320; }
+
+#icon-menu {
+  height: 24px;
+  width: 24px;
+  margin-left: 20px;
+  margin-top: 10px;
+  margin-left: 30px; }

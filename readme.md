@@ -2,6 +2,13 @@
 
 ## Week 1: Front-End Fundamentals
 
+### UI - Finance Market
+
+- Developed the Side menu and profile design.
+- Wrote the template for vertical product card.
+- Horizontal Card (Pending)
+- Responsiveness (Pending)
+
 ### Day 6-7: JavaScript Fundamentals ✔
 
 - Introduction to JavaScript and its role in web development.
@@ -14,7 +21,7 @@
 
 ### Day 4-5: Responsive Design with CSS ✔
 
-- Master CSS layout techniques using Flexbox and C- SS Grid.
+- Master CSS layout techniques using Flexbox and CSS Grid.
 - Understand media queries for responsive design.
 - Apply styles based on screen size.
 - Introduction to CSS preprocessors (e.g., Sass or Less).

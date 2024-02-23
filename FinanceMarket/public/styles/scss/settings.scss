@@ -1,0 +1,129 @@
+// variables
+$blue-color: #5456cf;
+$bg-grey: #f3f4f6;
+$second-grey: #6b7280;
+$white: #ffffff;
+$text-grey: #414557;
+$heading-color: #181c32;
+
+// mixin
+@mixin Roboto {
+  font-family: 'Roboto', sans-serif;
+}
+
+//classes
+.side-menu {
+  background-color: $white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  width: 240px;
+}
+
+.nav-menu {
+  margin: 5px;
+}
+
+.nav-pair {
+  align-items: center;
+  border-radius: 5px;
+  display: flex;
+  padding: 5px 5px;
+  transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: #eeeefa;
+  }
+}
+
+// id
+#title-div {
+  color: $heading-color;
+  text-align: center;
+  width: inherit;
+  letter-spacing: 1px;
+}
+#title-heading {
+  margin: 20px;
+}
+
+#bar-nav-text {
+  color: #515565;
+  font-weight: 400;
+  margin-left: 15px;
+}
+
+@mixin icons {
+  height: 24px;
+  width: 24px;
+  margin-left: 20px;
+}
+#icon-img {
+  @include icons();
+}
+
+#div-nav-second {
+  margin-top: 160px;
+}
+
+#count {
+  background-color: $blue-color;
+  border-radius: 20px;
+  margin-left: 30px;
+  padding: 5px 10px;
+}
+
+#count-text {
+  font-family: inherit;
+  color: $white;
+  font-weight: 500;
+}
+
+hr {
+  background-color: $bg-grey;
+  margin: 0px 5px;
+}
+
+#profile {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+  margin-top: 25px;
+}
+#dp {
+  background-color: $blue-color;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  width: 50px;
+  height: 50px;
+}
+
+#dp-text {
+  color: $white;
+  font-family: inherit;
+  font-weight: 300;
+  font-size: large;
+  margin-left: 3px;
+}
+
+#profile-text-details {
+  color: $heading-color;
+  font-family: inherit;
+  margin-left: 10px;
+}
+
+#profile-name {
+  font-weight: 500;
+}
+#profile-title {
+  margin-top: 5px;
+  font-weight: 320;
+}
+
+#icon-menu {
+  @include icons();
+  margin-top: 10px;
+  margin-left: 30px;
+}
