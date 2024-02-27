@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+// variables
+$blue-color: #5456cf;
+$bg-grey: #f3f4f6;
+$second-grey: #6b7280;
+$white: #ffffff;
+$text-grey: #414557;
+$heading-color: #181c32;
+
+// classes
+.div-h-item {
+  background-color: $white;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  height: 320px;
+  width: 380px;
+  box-sizing: border-box;
+}
+
+.fade-out {
+  position: relative;
+  right: 0;
+  width: 320px;
+  background: linear-gradient(to right, transparent, $bg-grey);
+}
+
+.div-item-h-text {
+  padding: 5px;
+  margin: 10px;
+  margin-bottom: 0;
+}
+
+#h-list {
+  display: flex;
+  margin-left: 5px;
+}
+
+#menu-heading-second {
+  margin-left: 15px;
+  padding: 5px;
+}
+
+#h-img {
+  border-radius: 10px;
+  height: 140px;
+  width: inherit;
+}
+
+#h-heading {
+  color: $heading-color;
+  font-weight: 500;
+}
+
+#h-card-p {
+  color: #515565;
+  font-weight: 300;
+  margin: 10px 0;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+}
+
+// buttons
+.div-h-btn {
+  padding: 5px;
+  margin-left: 10px;
+}
+
+.btn-h-white {
+  padding: 10px 20px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  font-family: inherit;
+  &:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  }
+  border: 1px solid #515565;
+  background-color: $white;
+  color: $text-grey;
+}
+
+#div-scroll {
+  background-color: $white;
+  border-radius: 50px;
+  padding: 15px;
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  top: -213px;
+  left: 880px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 680px) {
+  .div-h-item {
+    height: 300px;
+    width: 370px;
+  }
+  #h-list {
+    margin-left: -8px;
+    flex-direction: column;
+  }
+  #menu-heading-second {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 15px;
+  }
+  #menu-heading-second-text {
+    font-size: 16pt;
+  }
+}

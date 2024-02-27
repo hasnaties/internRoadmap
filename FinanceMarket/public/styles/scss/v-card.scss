@@ -15,39 +15,51 @@ $heading-color: #181c32;
 body {
   @include Roboto;
   background-color: $bg-grey;
+  display: flex;
 }
 
 h3 {
   color: $heading-color;
+  font-size: 14pt;
 }
 
 h6 {
   color: $heading-color;
-  font-size: 1em;
+  font-size: 12pt;
 }
 
-p {
+#v-list {
+  display: flex;
+}
+#card-p {
   color: #515565;
   font-weight: 300;
   margin: 10px 0;
 }
 
-img {
+#card-img {
   border-radius: 10px;
-  height: 160px;
+  height: 140px;
   width: inherit;
 }
 // classes
+.right-side {
+  display: flex;
+  flex-direction: column;
+  margin-left: 272px;
+}
 .div-item {
   background-color: $white;
   border-radius: 15px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 10px;
-  width: 360px;
+  margin: 15px;
+  width: 325px;
 }
 
 .div-item-text {
-  margin: 20px 15px;
+  margin: 15px 15px;
+  font-weight: 300px;
+  font-size: 12pt;
 }
 
 .heading-second {
@@ -61,7 +73,7 @@ img {
 .double-pair {
   display: flex;
   flex-direction: row;
-  margin-top: 12px;
+  margin-top: 15px;
 }
 
 .ratepa {
@@ -70,11 +82,11 @@ img {
 
 @mixin btn {
   color: #fff;
-  padding: 10px 20px;
+  padding: 15px 25px;
   border: none;
   border-radius: 5px;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 12pt;
   font-weight: 500;
   font-family: inherit;
   &:focus {
@@ -85,7 +97,7 @@ img {
 // buttons
 .div-btn {
   margin-top: -12px;
-  padding: 15px;
+  padding: 10px;
 }
 
 .btn-blue {
@@ -104,9 +116,59 @@ img {
   margin-top: 20px;
 }
 
+// Nav Address
+.nav-address {
+  display: flex;
+  margin: 10px 0;
+  align-items: center;
+}
+
+@mixin icons-address {
+  height: 16px;
+  width: 16px;
+  margin-left: 15px;
+}
+#icon-address-home {
+  @include icons-address;
+}
+#icon-address-gt {
+  @include icons-address;
+  height: 10px;
+  width: 10px;
+}
+#address-name {
+  font-size: small;
+  margin-left: 15px;
+  color: $second-grey;
+  font-weight: 500;
+}
+
+// Menu Heading
+#menu-heading {
+  margin: 5px;
+  margin-left: 15px;
+}
+
 // media - Responsive
-@media screen and (max-width: 600px) {
-  .grid-container {
-    grid-template-columns: 1fr;
+@media screen and (max-width: 680px) {
+  #v-list {
+    margin-left: 20px;
+    flex-direction: column;
+  }
+
+  .right-side {
+    margin-left: 0px;
+  }
+
+  .nav-address {
+    margin-left: 10px;
+  }
+  .div-item {
+    margin-left: 0px;
+  }
+
+  #menu-heading {
+    margin-left: 20px;
+    margin-top: 30px;
   }
 }

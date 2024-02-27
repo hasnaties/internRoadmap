@@ -6,16 +6,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.goo1gleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
     href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
     rel="stylesheet">
 
   <!-- styles -->
-  <link rel="stylesheet" href="styles/css/settings.css">
-  <link rel="stylesheet" href="styles/css/base.css">
-  <link rel="stylesheet" href="styles/css/styles.css">
+  <link rel="stylesheet" href="../styles/css/h-card.css">
+  <link rel="stylesheet" href="./styles/css/v-card.css">
+  <link rel="stylesheet" href="../styles/css/menu.css">
 
   <!-- Tab -->
   <link rel="shortcut icon" type="image/x-icon" href="./images/favicon.ico" />
@@ -24,63 +24,315 @@
 
 <body>
 
-  <div class="side-menu">
-    <div id="title-div">
-      <h2 id="title-heading">Finance Market</h2>
-    </div>
+  <!-- Side Menu -->
 
-    <!-- Nav -->
-    <div class="nav-menu">
+  <!-- Menu toggle -->
+  <div id="menu-toggle" class="menu-toggle" onclick="toggle()">
+    <img id="ham-menu" src="./images/icons/hamburger-menu.png" alt="Ham-Menu">
+  </div>
 
-      <div class="nav-pair">
-        <img id="icon-img" src="./images/icons/home.png" alt="Home Icon">
-        <p id="bar-nav-text">Dashboard</p>
-      </div>
-      <div class="nav-pair">
-        <img id="icon-img" src="./images/icons/bars.png" alt="Bars">
-        <p id="bar-nav-text">Finance Products</p>
-      </div>
-      <div class="nav-pair">
-        <img id="icon-img" src="./images/icons/paper.png" alt="paper">
-        <p id="bar-nav-text">My Applications</p>
+  <div id="left-side">
+
+    <div id="side-menu" class="side-menu">
+      <div id="title-div">
+        <h2 id="title-heading">Finance Market</h2>
       </div>
 
-      <!-- Remaining Nav -->
-      <div id="div-nav-second">
+      <!-- Nav -->
+      <div class="nav-menu">
+
         <div class="nav-pair">
-          <img id="icon-img" src="./images/icons/notification.png" alt="notification">
-          <p id="bar-nav-text">Notifications</p>
+          <img id="icon-img" src="./images/icons/home.png" alt="Home Icon">
+          <p id="bar-nav-text">Dashboard</p>
+        </div>
+        <div class="nav-pair">
+          <img id="icon-img" src="./images/icons/bars.png" alt="Bars">
+          <p id="bar-nav-text">Finance Products</p>
+        </div>
+        <div class="nav-pair">
+          <img id="icon-img" src="./images/icons/paper.png" alt="paper">
+          <p id="bar-nav-text">My Applications</p>
+        </div>
 
-          <div id="count">
-            <p id="count-text">03</p>
+        <!-- Remaining Nav -->
+        <div id="div-nav-second">
+          <div class="nav-pair">
+            <img id="icon-img" src="./images/icons/notification.png" alt="notification">
+            <p id="bar-nav-text">Notifications</p>
+
+            <div id="count">
+              <p id="count-text">03</p>
+            </div>
+          </div>
+          <div class="nav-pair">
+            <img id="icon-img" src="./images/icons/settings.png" alt="settings">
+            <p id="bar-nav-text">Settings</p>
           </div>
         </div>
-        <div class="nav-pair">
-          <img id="icon-img" src="./images/icons/settings.png" alt="settings">
-          <p id="bar-nav-text">Settings</p>
+      </div>
+
+
+      <hr>
+
+      <!-- Profile and Details -->
+      <div id="profile">
+
+        <div id="dp">
+          <p id="dp-text">AB</p>
+        </div>
+
+        <div id="profile-text-details">
+          <p id="profile-name">Adam Blake</p>
+          <p id="profile-title">Admin</p>
+        </div>
+
+        <!-- Drop down button -->
+        <div id="btn-dropdown" onclick="dropdown()">
+          <img id="icon-menu" src="./images/icons/menu.png" alt="menu">
+        </div>
+
+        <!-- Drop down Menu -->
+        <div id="drop-down">
+          <img id="icon-img-logout" src="./images/icons/logout.png" alt="logout">
+          <p id="text-logout">Log out</p>
         </div>
       </div>
-    </div>
+      <p id="last-login">Last Login 12h ago.</p>
 
 
-    <hr>
-
-    <!-- Profile and Details -->
-    <div id="profile">
-
-      <div id="dp">
-        <p id="dp-text">AB</p>
-      </div>
-
-      <div id="profile-text-details">
-        <p id="profile-name">Adam Blake</p>
-        <p id="profile-title">Admin</p>
-      </div>
-      <img id="icon-menu" src="./images/icons/menu.png" alt="menu">
     </div>
 
   </div>
 
+  <!-- Right Side -->
+  <div id="right-side" class="right-side">
+
+    <!-- Location Indicator -->
+    <div class="nav-address">
+      <img id="icon-address-home" src="./images/icons/home.png" alt="Home Icon">
+      <img id="icon-address-gt" src="./images/icons/greater-than.png" alt="greater-than">
+      <p id="address-name">Finance Products</p>
+    </div>
+
+    <div id="menu-heading">
+      <h2 id="menu-heading-text">Finance Products</h2>
+    </div>
+
+    <!-- v-list -->
+    <div id="v-list">
+
+      <!-- V-item #1-->
+      <div class="div-item">
+
+        <!-- Image -->
+        <img id="card-img" src="../images/usingcard.png" alt="coin">
+
+        <!-- Details -->
+        <div class="div-item-text">
+
+          <h3>POS Financing</h3>
+          <p id="card-p">Invoice financing provides businesses with quick funding by advancing payments on their unpaid
+            invoices,
+            enhancing cash flow and reducing waiting times for payment.</p>
+          <div class="double-pair">
+            <div class="single-pair">
+              <p class="heading-second">Product</p>
+              <h6>POS Finance</h6>
+            </div>
+            <div class="single-pair">
+              <p class="heading-second">Max Finance Amount</p>
+              <h6>10,000 SAR</h6>
+            </div>
+          </div>
+
+          <div class="double-pair">
+            <div class="single-pair">
+              <p class="heading-second">Tenor</p>
+              <h6>6 Months</h6>
+            </div>
+            <div class="single-pair ratepa">
+              <p class="heading-second">Rate p.a</p>
+              <h6>3.25%</h6>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+
+        </div>
+        <div class="div-btn">
+          <button class="btn-blue">Apply</button>
+          <button class="btn-white">View Details</button>
+        </div>
+
+      </div>
+
+      <!-- V-item #2-->
+      <div class="div-item">
+
+        <!-- Image -->
+        <img id="card-img" src="../images/usingcard.png" alt="coin">
+
+        <!-- Details -->
+        <div class="div-item-text">
+
+          <h3>POS Financing</h3>
+          <p id="card-p">Invoice financing provides businesses with quick funding by advancing payments on their unpaid
+            invoices,
+            enhancing cash flow and reducing waiting times for payment.</p>
+          <div class="double-pair">
+            <div class="single-pair">
+              <p class="heading-second">Product</p>
+              <h6>POS Finance</h6>
+            </div>
+            <div class="single-pair">
+              <p class="heading-second">Max Finance Amount</p>
+              <h6>10,000 SAR</h6>
+            </div>
+          </div>
+
+          <div class="double-pair">
+            <div class="single-pair">
+              <p class="heading-second">Tenor</p>
+              <h6>6 Months</h6>
+            </div>
+            <div class="single-pair ratepa">
+              <p class="heading-second">Rate p.a</p>
+              <h6>3.25%</h6>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+
+        </div>
+        <div class="div-btn">
+          <button class="btn-blue">Apply</button>
+          <button class="btn-white">View Details</button>
+        </div>
+
+      </div>
+
+      <!-- V-item #3-->
+      <div class="div-item">
+
+        <!-- Image -->
+        <img id="card-img" src="../images/usingcard.png" alt="coin">
+
+        <!-- Details -->
+        <div class="div-item-text">
+
+          <h3>POS Financing</h3>
+          <p id="card-p">Invoice financing provides businesses with quick funding by advancing payments on their unpaid
+            invoices,
+            enhancing cash flow and reducing waiting times for payment.</p>
+          <div class="double-pair">
+            <div class="single-pair">
+              <p class="heading-second">Product</p>
+              <h6>POS Finance</h6>
+            </div>
+            <div class="single-pair">
+              <p class="heading-second">Max Finance Amount</p>
+              <h6>10,000 SAR</h6>
+            </div>
+          </div>
+
+          <div class="double-pair">
+            <div class="single-pair">
+              <p class="heading-second">Tenor</p>
+              <h6>6 Months</h6>
+            </div>
+            <div class="single-pair ratepa">
+              <p class="heading-second">Rate p.a</p>
+              <h6>3.25%</h6>
+            </div>
+          </div>
+
+          <!-- Buttons -->
+
+        </div>
+        <div class="div-btn">
+          <button class="btn-blue">Apply</button>
+          <button class="btn-white">View Details</button>
+        </div>
+
+      </div>
+    </div>
+
+
+    <div id="menu-heading-second">
+      <h3 id="menu-heading-second-text">Grow Your Business</h3>
+    </div>
+
+    <!-- h-list -->
+    <div id="h-list-container">
+
+      <div id="h-list">
+
+
+        <!-- h-Item #1 -->
+        <div class="div-h-item">
+
+          <!-- Image -->
+          <img id="h-img" src="./images/horizental1.png" alt="h1">
+
+          <div class="div-item-h-text">
+
+            <h3 id="h-heading">Understanding Receivables Financing</h3>
+            <p id="h-card-p">Receivables finance, or receivables financing, is a trade finance method businesses can use
+              to
+              avada-kadavra.</p>
+          </div>
+
+          <!-- Button -->
+          <div class="div-h-btn">
+            <button class="btn-h-white">Read More</button>
+          </div>
+
+        </div>
+        <!-- h-Item #2 -->
+        <div class="div-h-item">
+
+          <!-- Image -->
+          <img id="h-img" src="./images/horizental1.png" alt="h1">
+
+          <div class="div-item-h-text">
+
+            <h3 id="h-heading">Understanding Receivables Financing</h3>
+            <p id="h-card-p">Receivables finance, or receivables financing, is a trade finance method businesses can use
+              to
+              avada-kadavra.</p>
+          </div>
+
+          <!-- Button -->
+          <div class="div-h-btn">
+            <button class="btn-h-white">Read More</button>
+          </div>
+
+        </div>
+        <!-- h-Item #3 -->
+        <div class="div-h-item">
+
+          <!-- Image -->
+          <img id="h-img" src="./images/horizental1.png" alt="h1">
+
+          <div class="div-item-h-text">
+
+            <h3 id="h-heading">Understanding Receivables Financing</h3>
+            <p id="h-card-p">Receivables finance, or receivables financing, is a trade finance method businesses can use
+              to
+              avada-kadavra.</p>
+          </div>
+
+          <!-- Button -->
+          <div class="div-h-btn">
+            <button class="btn-h-white">Read More</button>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
+
+<script src="./script/script.js"></script>
 
 </html>
