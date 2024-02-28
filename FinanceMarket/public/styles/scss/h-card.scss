@@ -11,6 +11,7 @@ $second-grey: #6b7280;
 $white: #ffffff;
 $text-grey: #414557;
 $heading-color: #181c32;
+$light-grey: #ced1d5;
 
 // classes
 .div-h-item {
@@ -23,13 +24,6 @@ $heading-color: #181c32;
   box-sizing: border-box;
 }
 
-.fade-out {
-  position: relative;
-  right: 0;
-  width: 320px;
-  background: linear-gradient(to right, transparent, $bg-grey);
-}
-
 .div-item-h-text {
   padding: 5px;
   margin: 10px;
@@ -39,6 +33,7 @@ $heading-color: #181c32;
 #h-list {
   display: flex;
   margin-left: 5px;
+  overflow: auto;
 }
 
 #menu-heading-second {
@@ -74,33 +69,44 @@ $heading-color: #181c32;
 }
 
 .btn-h-white {
-  padding: 10px 20px;
+  border: 1px solid $light-grey;
+  background-color: $white;
+  color: $text-grey;
   border-radius: 10px;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 12pt;
   font-weight: 400;
   font-family: inherit;
+  padding: 10px 20px;
+
   &:focus {
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
   }
-  border: 1px solid #515565;
-  background-color: $white;
-  color: $text-grey;
 }
 
 #div-scroll {
-  background-color: $white;
+  background-color: white;
   border-radius: 50px;
-  padding: 15px;
-  position: absolute;
-  height: 50px;
-  width: 50px;
-  top: -213px;
-  left: 880px;
   cursor: pointer;
+  position: absolute;
+  padding: 10px;
+  height: 50px;
+  right: 30px;
+  top: 732px;
+  width: 50px;
+  z-index: 2;
+}
+#icon-scroll {
+  height: 24px;
+  margin: 5px;
+  width: 24px;
 }
 
 @media screen and (max-width: 680px) {
+  #div-scroll {
+    display: none;
+  }
+
   .div-h-item {
     height: 300px;
     width: 370px;

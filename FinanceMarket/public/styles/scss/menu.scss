@@ -6,6 +6,7 @@ $white: #ffffff;
 $text-grey: #414557;
 $heading-color: #181c32;
 $new-grey: #515565;
+$light-grey: #ced1d5;
 
 // mixin
 @mixin Roboto {
@@ -88,7 +89,7 @@ $new-grey: #515565;
 }
 
 hr {
-  background-color: $bg-grey;
+  background-color: $light-grey;
   margin: 0px 5px;
 }
 
@@ -136,7 +137,7 @@ hr {
 }
 
 #drop-down {
-  border: 1px solid $second-grey;
+  border: 1px solid $light-grey;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: $white;

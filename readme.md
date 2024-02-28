@@ -4,10 +4,11 @@
 
 ### UI - Finance Market
 
-- ✔ Developed the Side menu and profile design.
-- ✔ Wrote the template for vertical product card.
-- ✔ Horizontal Card
-- ✔ Responsiveness
+- ✔ Side menu and profile design.
+- ✔ Vertical product card.
+- ✔ Horizontal blog card.
+- ✔ Responsiveness.
+- ✔ Revision and Fixes.
 
 ### Day 6-7: JavaScript Fundamentals ✔
 
