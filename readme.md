@@ -1,14 +1,29 @@
 # MERN Stack Developer Training Roadmap
 
-## Week 1: Front-End Fundamentals
+## Week 2: Introduction to React.js
 
-### UI - Finance Market
+### Day 8-9: Getting Started with React ✔
 
-- ✔ Side menu and profile design.
-- ✔ Vertical product card.
-- ✔ Horizontal blog card.
-- ✔ Responsiveness.
-- ✔ Revision and Fixes.
+- Learn what React is and why it's popular.
+- Set up your development environment (Node.js and npm).
+- Understand JSX and its role in React.
+- Create your first React component.
+- Explore component rendering and nesting.
+- Learn about component state and props.
+- Pass data between components.
+- Practice building a simple UI with props.
+- Explore the lifecycle of a React component.
+- Use lifecycle methods like componentDidMount.
+
+## Week 1: Front-End Fundamentals ✔
+
+### UI - Finance Market ✔
+
+- Side menu and profile design.
+- Vertical product card.
+- Horizontal blog card.
+- Responsiveness.
+- Revision and Fixes.
 
 ### Day 6-7: JavaScript Fundamentals ✔
 
