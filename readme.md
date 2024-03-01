@@ -2,6 +2,12 @@
 
 ## Week 2: Introduction to React.js
 
+### Day 10-11: State Management with React Hooks ✔
+
+- Learn about React Hooks (useState, useEffect).
+- Use useState for managing local component state.
+- Utilize useEffect for side effects and data fetching.
+
 ### Day 8-9: Getting Started with React ✔
 
 - Learn what React is and why it's popular.
