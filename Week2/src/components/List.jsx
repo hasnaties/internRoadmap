@@ -1,27 +1,21 @@
 import { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { setTasks } from "../reducers/tasksReducer";
 
 const List = () => {
-  const [list, setList] = useState([{ title: 'No Data' }]);
+  const dispatch = useDispatch();
+  const list = useSelector((state) => state.tasks)
   const [reload, setReload] = useState(false);
 
-
-  //Fetch Data
-  const fetchData = () => {
-    fetch('http://localhost:4000/api/tasks').then((res) => {
-      res.json().then((tasks) => {
-        setList(tasks);
-      })
-    })
-  }
   // - Fetch Data on mounting
   useEffect(() => {
-    fetchData();
+    console.log('fired.');
+    dispatch(setTasks());
   }, []);
 
   // - Reload Data
   useEffect(() => {
     console.log('Reload');
-    fetchData();
   }, [reload])
 
   //Change reload state
