@@ -1,30 +1,30 @@
-import { useEffect, useState } from "react";
+import { addTask, removeTask } from "../reducers/tasksReducer";
 import { useDispatch, useSelector } from "react-redux";
-import { setTasks } from "../reducers/tasksReducer";
 
 const List = () => {
+  //redux-state
   const dispatch = useDispatch();
-  const list = useSelector((state) => state.tasks)
-  const [reload, setReload] = useState(false);
+  const list = useSelector((state) => state.tasks);
 
-  // - Fetch Data on mounting
-  useEffect(() => {
-    console.log('fired.');
-    dispatch(setTasks());
-  }, []);
 
-  // - Reload Data
-  useEffect(() => {
-    console.log('Reload');
-  }, [reload])
-
-  //Change reload state
-  const handleClick = () => setReload(!reload);
+  //Add the task in redux state
+  const handleAdd = () => {
+    const task = {
+      _id: 55,
+      title: "redux"
+    }
+    dispatch(addTask(task));
+  };
+  //Remove the last-task in redux state
+  const handleRemove = () => {
+    dispatch(removeTask());
+  };
 
   return (
     <>
       <h1>List</h1>
-      <button onClick={handleClick}>Reload</button>
+      <button onClick={handleAdd}>Add</button>
+      <button onClick={handleRemove}>Remove</button>
 
       {list.map((task) => {
         return (<p key={task.title}>{task.title}</p>)

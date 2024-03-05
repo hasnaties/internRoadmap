@@ -1,15 +1,11 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const reducers = {
-  async setTasks(state) {
-    const rawData = await fetch(import.meta.env.VITE_URL);
-    const data = await rawData.json();
-    console.log(data);
-
-    return {
-      ...state,
-      tasks: data
-    }
+  addTask(state, action) {
+    state.push(action.payload);
+  },
+  removeTask(state) {
+    state.pop();
   }
 }
 
@@ -19,5 +15,5 @@ const tasksSlice = createSlice({
   reducers
 });
 
-export const { setTasks } = tasksSlice.actions;
+export const { addTask, removeTask } = tasksSlice.actions;
 export default tasksSlice.reducer;

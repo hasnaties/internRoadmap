@@ -2,6 +2,12 @@
 
 ## Week 2: Introduction to React.js
 
+### Day 12-13: Redux for State Management ✔
+
+- Introduction to state management with Redux.
+- Create Redux actions, reducers, and store.
+- Connect Redux store to React components using useSelector - and useDispatch hooks.
+
 ### Day 10-11: State Management with React Hooks ✔
 
 - Learn about React Hooks (useState, useEffect).
