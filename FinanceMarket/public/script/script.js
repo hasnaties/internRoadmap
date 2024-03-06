@@ -20,7 +20,7 @@ function toggle() {
     sideMenu.style.display = 'flex';
     rightSide.style.display = 'none';
 
-  } else if (rightSide.style.display = 'none') {
+  } else if (rightSide.style.display == 'none') {
     rightSide.style.display = 'block';
     sideMenu.style.display = 'none';
   }
