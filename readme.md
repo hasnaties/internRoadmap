@@ -1,6 +1,12 @@
 # MERN Stack Developer Training Roadmap
 
-## Week 2: Introduction to React.js
+## Week 2: Introduction to React.js ✔
+
+### Day 14: Practice and Integration
+
+- Practice state management with both React Hooks and Redux.
+- Integrate Redux into existing React applications.
+- Compare and contrast the approaches for state management.
 
 ### Day 12-13: Redux for State Management ✔
 
