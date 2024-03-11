@@ -1,3 +1,5 @@
+@use './button';
+
 #v-list {
   display: flex;
 }
@@ -66,22 +68,8 @@
 .ratepa {
   margin-left: 12px;
 }
-// buttons
 
-@mixin btn {
-  appearance: button;
-  color: #fff;
-  padding: 10px 25px;
-  border: none;
-  border-radius: 11px;
-  cursor: pointer;
-  font-size: 10pt;
-  font-weight: 450;
-  font-family: inherit;
-  &:focus {
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
-  }
-}
+// buttons
 
 .div-btn {
   margin-top: -12px;
@@ -90,12 +78,12 @@
 }
 
 .btn-blue {
-  @include btn();
+  @include button.btn();
   background-color: $blue-color;
   box-shadow: 0 0 5px rgba(84, 86, 207, 0.7);
 }
 .btn-white {
-  @include btn();
+  @include button.btn();
   border: 1px solid $light-grey;
   background-color: $white;
   color: $text-grey;
