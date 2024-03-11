@@ -1,0 +1,17 @@
+{
+  "Item1": {
+    "title": "POS Financing"
+  },
+  "Item2": {
+    "title": "Invoice Financing"
+  },
+  "Item3": {
+    "title": "Micro Financing"
+  },
+
+  "description": "Invoice financing provides businesses with quick funding by advancing payments on their unpaid invoices, enhancing cash flow and reducing waiting times for payment.",
+  "product": "POS Finance",
+  "maxAmount": "10,000 SAR",
+  "tenor": "6 Months",
+  "rate": "3.25%"
+}
