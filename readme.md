@@ -2,6 +2,22 @@
 
 ## Week 2: Introduction to React.js
 
+### UI - FinanceMarket-React (Ready for review)
+
+- Successfully transformed plain markup into JSX.
+- Segmented pages into smaller, more manageable components.
+- Developed reusable React components.
+- Refactored scripts into functions within respective components.
+- Optimized styles for efficiency and eliminating any redundant CSS.
+- Setup the state management and props to enable responsiveness in the app.
+- Added JSON file to replace hard-coded content.
+
+### Day 14: Practice and Integration ✔
+
+- Practice state management with both React Hooks and Redux.
+- Integrate Redux into existing React applications.
+- Compare and contrast the approaches for state management.
+
 ### Day 10-11: State Management with React Hooks ✔
 
 - Learn about React Hooks (useState, useEffect).
