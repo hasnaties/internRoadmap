@@ -7,9 +7,9 @@
 - Created Models for User, Product and Blog.
 - Set up endpoints to fetch profile, products and blogs.
 
-## Week 2: Introduction to React.js
+## Week 2: Introduction to React.js ✔
 
-### FinanceMarket-React (Ready for review)
+### FinanceMarket-React
 
 - Successfully transformed plain markup into JSX.
 - Segmented pages into smaller, more manageable components.
@@ -19,19 +19,19 @@
 - Setup the state management and props to enable responsiveness in the app.
 - Added JSON file to replace hard-coded content.
 
-### Day 14: Practice and Integration ✔
+### Day 14: Practice and Integration
 
 - Practice state management with both React Hooks and Redux.
 - Integrate Redux into existing React applications.
 - Compare and contrast the approaches for state management.
 
-### Day 10-11: State Management with React Hooks ✔
+### Day 10-11: State Management with React Hooks
 
 - Learn about React Hooks (useState, useEffect).
 - Use useState for managing local component state.
 - Utilize useEffect for side effects and data fetching.
 
-### Day 8-9: Getting Started with React ✔
+### Day 8-9: Getting Started with React
 
 - Learn what React is and why it's popular.
 - Set up your development environment (Node.js and npm).
