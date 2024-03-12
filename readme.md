@@ -2,7 +2,12 @@
 
 ## Week 2: Introduction to React.js
 
-### UI - FinanceMarket-React (Ready for review)
+### FinanceMarket-Backend (In progress)
+
+- Created Models for User, Product and Blog.
+- Set up endpoints to fetch profile, products and blogs.
+
+### FinanceMarket-React (Ready for review)
 
 - Successfully transformed plain markup into JSX.
 - Segmented pages into smaller, more manageable components.
