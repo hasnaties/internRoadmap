@@ -1,11 +1,13 @@
 # MERN Stack Developer Training Roadmap
 
-## Week 2: Introduction to React.js
+## Week 3: Building Full-Stack Applications with MERN
 
 ### FinanceMarket-Backend (In progress)
 
 - Created Models for User, Product and Blog.
 - Set up endpoints to fetch profile, products and blogs.
+
+## Week 2: Introduction to React.js
 
 ### FinanceMarket-React (Ready for review)
 
